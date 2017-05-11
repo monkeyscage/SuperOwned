@@ -8,7 +8,7 @@ address public superowner;
     }
 
     modifier onlyOwner { //superowner is more important than owner
-        if(owner!=address(0)){
+        if(superowner!=address(0)){
         if (msg.sender != superowner) throw;
         }else{
         if (msg.sender != owner) throw;
