@@ -15,7 +15,6 @@ address public superowner;
         }
     }
 
-
     //you can transfer ownership only if NO superowner is declared
     function transferOwnership(address newOwner) onlyOwner {
         owner = newOwner;
