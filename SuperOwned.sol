@@ -8,7 +8,7 @@ public bool isSuperOwned;
         owner = msg.sender;
     }
 
-    modifier onlyOwner {
+    modifier onlyOwner { //superowner is more important than owner
         if(isSuperOwned){
         if (msg.sender != superowner) throw;
         }else{
@@ -16,13 +16,16 @@ public bool isSuperOwned;
         }
     }
 
+
+    //you can transfer ownership only if NO superowner is declared
     function transferOwnership(address newOwner) onlyOwner {
         owner = newOwner;
     }
     
+    //you can set a superowner only if NO superowner is already declared
     function setSuperOwner(address newSuperOwner,bool isNowSuperOwned) onlyOwner {
-        superowner = newSuperOwner;
-        isSuperOwned=isNowSuperOwned;
+        superowner = newSuperOwner;    //can be an address or nothing
+        isSuperOwned=isNowSuperOwned;  //can be true or false
     }
 
 }
