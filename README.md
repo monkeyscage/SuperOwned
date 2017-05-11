@@ -22,7 +22,8 @@ Please feel free to suggest changes to the code!
 ARE YOU A DEV ? 
 
 In the future any kind of standard Borrow-Lend-Rent-Sell-Resell modules will be needed!
-Now any Etheruem contract is an ASSET!
+
+Any Etheruem contract is an ASSET!
 
 You found your future job!
 
