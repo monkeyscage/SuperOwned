@@ -2,14 +2,13 @@ contract SuperOwned{
 
 address public owner;
 address public superowner;
-public bool isSuperOwned;
 
     function owned() {
         owner = msg.sender;
     }
 
     modifier onlyOwner { //superowner is more important than owner
-        if(isSuperOwned){
+        if(owner!=address(0)){
         if (msg.sender != superowner) throw;
         }else{
         if (msg.sender != owner) throw;
@@ -23,10 +22,10 @@ public bool isSuperOwned;
     }
     
     //you can set a superowner only if NO superowner is already declared
-    function setSuperOwner(address newSuperOwner,bool isNowSuperOwned) onlyOwner {
-        superowner = newSuperOwner;    //can be an address or nothing
-        isSuperOwned=isNowSuperOwned;  //can be true or false
+    function setSuperOwner(address newSuperOwner) onlyOwner {
+        superowner = newSuperOwner;    //can be an address or 0x0
     }
+    
 
 }
 
