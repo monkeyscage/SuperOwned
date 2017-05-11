@@ -1,5 +1,5 @@
 # SuperOwned
-A standard way to make your smart contract Borrowable/Rentable/Lendable
+A standard way to make your smart contract Borrowable/Rentable/Lendable/Resellable
 
 You are building a smart contract, and  you feel one day it may have a value.
 Will you be able to use it as an asset and borrow money form third party offering your contract as a guarantee?
@@ -21,7 +21,7 @@ Please feel free to suggest changes to the code!
 
 ARE YOU A DEV ? 
 
-In the future any kind of standard Borrow-Lend-Rent modules will be needed!
+In the future any kind of standard Borrow-Lend-Rent-Sell-Resell modules will be needed!
 Now any Etheruem contract is an ASSET!
 
 You found your future job!
