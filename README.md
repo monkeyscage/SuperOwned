@@ -19,6 +19,9 @@ When a contract is declared as "is SuperOwned", so ANY KIND of smart trick will 
 
 Please feel free to suggest changes to the code!
 
-ARE YOU A DEV? In the future any kind of standard Borrow-Lend-Rent modules will be needed!
+ARE YOU A DEV ? 
+
+In the future any kind of standard Borrow-Lend-Rent modules will be needed!
+
 You found your future job!
 
