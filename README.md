@@ -27,3 +27,4 @@ Any Etheruem contract is an ASSET!
 
 You found your future job!
 
+(built with the help of <a href="https://gist.github.com/DeviateFish">DeviateFish</a>)
