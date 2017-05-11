@@ -10,7 +10,7 @@ Ethereum is very powerful, if a contract is declared as SuperOwned (<a href="htt
 Once you attach a Module to the contract (you tell the contract its new SuperOwner), only that Module (the SuperOwner) can then detach itself.
 
 In case of renting, once the rent expires, the ownerships changes back, and you can take back the control over your contract.
-Usually the owner has special permissions inside the contract. The SuperOwner has NO PERMISSIONS,BUT it is the only one (if existing, declared, and running) able to overwrite the ownership back.
+Usually the owner has special permissions inside the contract. The SuperOwner has NO PERMISSIONS, BUT it is the only one (if existing, declared, and running) able to overwrite the ownership back.
 
 So pay attention to what you attach to your beloved valuable contract!
 
