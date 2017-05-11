@@ -13,6 +13,7 @@ address public superowner;
         }else{
         if (msg.sender != owner) throw;
         }
+        _;
     }
 
     //you can transfer ownership only if NO superowner is declared
