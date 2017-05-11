@@ -6,7 +6,6 @@ Will you be able to use it as an asset and borrow money form third party offerin
 Or... What if one day a guy comes and asks you to borrow your contract for one week?
 
 Ethereum is very powerful, if a contract is declared as SuperOwned (<a href="https://github.com/monkeyscage/SuperOwned/blob/master/SuperOwned.sol">see code here</a>), so anyone later can build a standard rent/borrow/lend module, and you can VERY EASILY attach it to your contract and exploit THE POWER OF THOSE MODULES.
-https://www.reddit.com/r/ethereum/comments/6abglz/we_need_a_contract_that_allows_borrowing_ether/
 
 Once you attach a Module to the contract (you tell the contract its new SuperOwner), only that Module (the SuperOwner) can then detach itself.
 
