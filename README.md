@@ -23,12 +23,4 @@ When a contract is declared as "is SuperOwned", so ANY KIND of smart trick will 
 
 Please feel free to suggest changes to the code!
 
-ARE YOU A DEV ? 
-
-In the future any kind of standard Borrow-Lend-Rent-Sell-Resell modules will be needed!
-
-Any Etheruem contract is an ASSET!
-
-You found your future job!
-
 (built with the help of <a href="https://gist.github.com/DeviateFish">DeviateFish</a>)
