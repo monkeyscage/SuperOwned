@@ -21,7 +21,11 @@ peri=per;
 
 function buyr() payable{
 if(msg.value<p)throw;
-end=block.number+peri;
+if(end>block.number)}{
+end+=peri*(msg.value/p);
+}else{
+end=block.number+(peri*(msg.value/p))peri;
+}
 temp=msg.sender;
 myContract m=myContract(c);
 if(!c.transferOwnership(msg.sender))throw;
