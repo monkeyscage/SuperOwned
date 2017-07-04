@@ -4,11 +4,14 @@ uint p;
 uint peri;
 uint end;
 address temp;
+uint status; //1 waiting buyer, 2 stopped
 
 function r(address con,uint pri,uint per){
 c=con;
 p=pri;
 peri=per;
+end=0;
+status=0;
 }
 
 function setPrice(uint pri) onlyOwner{
@@ -20,15 +23,25 @@ peri=per;
 }
 
 function buyr() payable{
+if(status==2)throw;
 if(msg.value<p)throw;
 if(end>block.number)}{
+if(msg.sender!=temp)throw;
 end+=peri*(msg.value/p);
 }else{
 end=block.number+(peri*(msg.value/p))peri;
-}
 temp=msg.sender;
+}
 myContract m=myContract(c);
 if(!c.transferOwnership(msg.sender))throw;
+}
+
+function stop() onlyOwner{
+status=2;
+}
+
+function start() onlyOwner{
+status=1;
 }
 
 function claim() onlyOwner returns (bool){
