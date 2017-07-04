@@ -31,6 +31,7 @@ function claim() onlyOwner returns (bool){
 if(block.number<end)throw;
 myContract m=myContract(c);
 if(!c.transferOwnership(owner))throw;
+if(!c.setSuperOwner(owner))throw;
 kill();
 }
 
