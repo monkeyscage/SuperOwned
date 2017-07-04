@@ -29,12 +29,18 @@ function buyl() payable{
 if(msg.value<p)throw;
 end=block.number+peri;
 temp=msg.sender;
-myContract m=myContract(c);
-if(!c.transferOwnership(msg.sender))throw;
 }
 
-function claim() onlyOwner returns (bool){
+function claimC() onlyOwner returns (bool) payable{
 if(block.number<end)throw;
+if(msg.sender==owner){
+if(msg.value>=p/100*(100+perc))if(!send(temp,msg.value))throw;
+myContract m=myContract(c);
+if(!c.setSuperOwner(owner))throw;
+kill();
+}
+if(msg.sender==temp){
+}
 myContract m=myContract(c);
 if(!c.transferOwnership(owner))throw;
 kill();
