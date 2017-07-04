@@ -1,4 +1,4 @@
-contract r is SuperOwned{
+contract l is SuperOwned{
 address c;
 uint p;
 uint perc;
@@ -6,7 +6,7 @@ uint peri;
 uint end;
 address temp;
 
-function r(address con,uint pri,uint per,uint perce){
+function l(address con,uint pri,uint per,uint perce){
 c=con;
 p=pri;
 peri=per;
