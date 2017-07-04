@@ -3,7 +3,7 @@ contract SuperOwned{
 address public owner;
 address public superowner;
 
-    function owned() {
+    function SuperOwned() {
         owner = msg.sender;
     }
 
