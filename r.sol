@@ -1,17 +1,23 @@
 contract r is SuperOwned{
-address c;
-uint p;
-uint peri;
-uint end;
-address temp;
-uint status; //1 waiting buyer, 2 stopped
+address public c;
+uint public p;
+uint public peri;
+uint public end;
+address public temp;
+bool public lock;
 
-function r(address con,uint pri,uint per){
+function r(){
+owner=msg.sender;
+}
+
+function init(address con,uint pri,uint per){
+if(msg.sender!=owner)throw;
 c=con;
 p=pri;
 peri=per;
 end=0;
 status=0;
+lock=false;
 }
 
 function setPrice(uint pri) onlyOwner{
@@ -23,7 +29,7 @@ peri=per;
 }
 
 function buyr() payable{
-if(status==2)throw;
+if(lock)throw;
 if(msg.value<p)throw;
 if(end>block.number)}{
 if(msg.sender!=temp)throw;
@@ -36,12 +42,8 @@ myContract m=myContract(c);
 if(!c.transferOwnership(msg.sender))throw;
 }
 
-function stop() onlyOwner{
-status=2;
-}
-
-function start() onlyOwner{
-status=1;
+function lock(bool l) onlyOwner{
+lock=l;
 }
 
 function claim() onlyOwner returns (bool){
