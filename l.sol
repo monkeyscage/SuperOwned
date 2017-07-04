@@ -1,14 +1,16 @@
 contract r is SuperOwned{
 address c;
 uint p;
+uint perc;
 uint peri;
 uint end;
 address temp;
 
-function r(address con,uint pri,uint per){
+function r(address con,uint pri,uint per,uint perce){
 c=con;
 p=pri;
 peri=per;
+perc=perce;
 }
 
 function setPrice(uint pri) onlyOwner{
@@ -19,7 +21,11 @@ function setPeriod(uint per) onlyOwner{
 peri=per;
 }
 
-function buyr() payable{
+function setPerc(uint perce) onlyOwner{
+perc=perce;
+}
+
+function buyl() payable{
 if(msg.value<p)throw;
 end=block.number+peri;
 temp=msg.sender;
