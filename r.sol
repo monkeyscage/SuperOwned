@@ -1,7 +1,8 @@
 contract r{
+address c;
 
-function r(){
-
+function r(address con){
+c=con;
 }
 
 function kill(){
