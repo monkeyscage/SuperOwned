@@ -32,24 +32,22 @@ temp=msg.sender;
 }
 
 function claimC() onlyOwner returns (bool) payable{
-if(block.number<end)throw;
 if(msg.sender==owner){
+if(block.number>end)throw;
 if(msg.value>=p/100*(100+perc))if(!send(temp,msg.value))throw;
 myContract m=myContract(c);
 if(!c.setSuperOwner(owner))throw;
 kill();
 }
 if(msg.sender==temp){
-}
+if(block.number<end)throw;
 myContract m=myContract(c);
 if(!c.transferOwnership(owner))throw;
+if(!c.setSuperOwner(owner))throw;
 kill();
 }
-
-function withdraw(){
-if(msg.sender!=owner)throw;
-if(!send(msg.sender,this.balance))throw;
 }
+
 
 function kill() private{
 selfdestroy();
@@ -58,4 +56,4 @@ selfdestroy();
 }
 
 
-contract myContract{ function transferOwnership(address newOwner)returns (bool){} }
+contract myContract{ function transferOwnership(address newOwner)returns (bool){} function setSuperOwner(address newSuperOwner)returns (bool){} }
