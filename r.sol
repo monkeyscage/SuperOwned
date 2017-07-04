@@ -31,13 +31,17 @@ function claim() onlyOwner returns (bool){
 if(block.number<end)throw;
 myContract m=myContract(c);
 if(!c.transferOwnership(owner))throw;
-if(!c.setSuperOwner(owner))throw;
-kill();
 }
 
 function withdraw(){
 if(msg.sender!=owner)throw;
 if(!send(msg.sender,this.balance))throw;
+}
+
+function close() onlyOwner{
+if(block.number<end)throw;
+if(!c.setSuperOwner(owner))throw;
+kill();
 }
 
 function kill() private{
