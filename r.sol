@@ -34,7 +34,8 @@ if(!c.transferOwnership(owner))throw;
 kill();
 }
 
-function withdraw() onlyOwner{
+function withdraw(){
+if(msg.sender!=owner)throw;
 if(!send(msg.sender,this.balance))throw;
 }
 
