@@ -31,7 +31,7 @@ peri=per;
 function buyr() payable{
 if(lock)throw;
 if(msg.value<p)throw;
-if(end>block.number)}{
+if(end>block.number){
 if(msg.sender!=temp)throw;
 end+=peri*(msg.value/p);
 }else{
