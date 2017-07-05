@@ -16,7 +16,6 @@ c=con;
 p=pri;
 peri=per;
 end=0;
-status=0;
 lock=false;
 }
 
