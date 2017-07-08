@@ -5,11 +5,19 @@ uint perc;
 uint peri;
 uint end;
 address temp;
+bool public lock;
 
-function l(address con,uint pri,uint per,uint perce){
+function l(){
+owner=msg.sender;
+}
+
+function init(address con,uint pri,uint per,uint perce){
+if(msg.sender!=owner)throw;
 c=con;
 p=pri;
 peri=per;
+end=0;
+lock=false;
 perc=perce;
 }
 
@@ -46,6 +54,10 @@ if(!c.transferOwnership(owner))throw;
 if(!c.setSuperOwner(owner))throw;
 kill();
 }
+}
+
+function lock(bool l) onlyOwner{
+lock=l;
 }
 
 function close() onlyOwner{
