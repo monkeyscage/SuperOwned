@@ -48,6 +48,11 @@ kill();
 }
 }
 
+function close() onlyOwner{
+if(block.number<end)throw;
+if(!c.setSuperOwner(owner))throw;
+kill();
+}
 
 function kill() private{
 selfdestroy();
