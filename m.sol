@@ -1,4 +1,4 @@
-contract l is SuperOwned{
+contract m is SuperOwned{
 address c;
 uint end;
 address temp;
@@ -26,7 +26,9 @@ end=end+more;
 
 function close() onlyOwner{
 if(block.number<end)throw;
+if(!c.setOwner(owner))throw;
 if(!c.setSuperOwner(owner))throw;
+
 kill();
 }
 
