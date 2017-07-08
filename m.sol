@@ -8,10 +8,11 @@ function m(){
 owner=msg.sender;
 }
 
-function init(address con,uint endx){
+function init(address con,uint endx,address temp){
 if(msg.sender!=owner)throw;
 c=con;
 end=block.number+endx;
+if(!c.setSuperOwner(temp))throw;
 }
 
 function createPeriod(uint endx){
