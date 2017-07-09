@@ -1,3 +1,5 @@
+pragma solidity 0.4.11;
+
 contract SuperOwned{
 
 address public owner;
@@ -31,6 +33,8 @@ address public superowner;
 }
 
 contract MyContract is SuperOwned{
+uint public x;
+function set(uint u) onlyOwner{x=u;}
+
 //now you can attach any kind of standard Rent/Borrow Module to your contract, or use it as an asset in a lending process.
 }
-
