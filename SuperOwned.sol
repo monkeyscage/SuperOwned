@@ -37,4 +37,5 @@ uint public x;
 function set(uint u) onlyOwner{x=u;}
 
 //now you can attach any kind of standard Rent/Borrow Module to your contract, or use it as an asset in a lending process.
+
 }
