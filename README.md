@@ -24,3 +24,5 @@ When a contract is declared as "is SuperOwned", so ANY KIND of smart trick will 
 Please feel free to suggest changes to the code!
 
 (built with the help of <a href="https://gist.github.com/DeviateFish">DeviateFish</a>)
+
+0xb310592FF0D35E84Dfd7A6799DA022119E3fd28D (superOwned.sol testnet)
