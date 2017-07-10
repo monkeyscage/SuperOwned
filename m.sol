@@ -63,7 +63,7 @@ end=end+more;
 }
 
 
-function close() onlyOwner{
+function close(){
 if(block.number<end)throw;
 if(!cc.transferOwnership(owner))throw;
 if(!cc.setSuperOwner(owner))throw;
