@@ -55,11 +55,13 @@ if(!cc.setSuperOwner(temp))throw;
 }
 
 function createPeriod(uint endx){
+if(block.number<end)throw;
 end=block.number+endx;
 }
 
 function extend(uint more){
-end=end+more;
+if(block.number>=end)throw;
+end+=more;
 }
 
 
