@@ -36,10 +36,10 @@ address public superowner;
 }
 
 contract m is SuperOwned{
-address c;
-myContract cc;
-uint end;
-address temp;
+address public c;
+myContract public cc;
+uint public end;
+address public temp;
 
 
 function m(){
