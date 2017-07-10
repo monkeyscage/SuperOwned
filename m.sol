@@ -36,10 +36,10 @@ address public superowner;
 }
 
 contract m is SuperOwned{
-address public c;
-myContract public cc;
-uint public end;
-address public temp;
+address public assetAddress;
+myContract public asset;
+uint public endBorrow;
+address public holder;
 
 
 function m(){
@@ -48,25 +48,26 @@ owner=msg.sender;
 
 function init(address con,uint endx,address temp){
 if(msg.sender!=owner)throw;
-cc=myContract(con);
-c=con;
-end=block.number+endx;
+asset=myContract(con);
+assetAddress=con;
+endBorrow=block.number+endx;
+holder=temp;
 if(!cc.setSuperOwner(temp))throw;
 }
 
 function createPeriod(uint endx){
-if(block.number<end)throw;
-end=block.number+endx;
+if(block.number<endBorrow)throw;
+endBorrow=block.number+endx;
 }
 
 function extend(uint more){
-if(block.number>=end)throw;
-end+=more;
+if(block.number>=endBorrow)throw;
+endBorrow+=more;
 }
 
 
 function close(){
-if(block.number<end)throw;
+if(block.number<endBorrow)throw;
 if(!cc.transferOwnership(owner))throw;
 if(!cc.setSuperOwner(owner))throw;
 
