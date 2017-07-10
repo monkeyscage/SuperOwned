@@ -68,8 +68,8 @@ endBorrow+=more;
 
 function close(){
 if(block.number<endBorrow)throw;
-if(!cc.transferOwnership(owner))throw;
-if(!cc.setSuperOwner(owner))throw;
+if(!asset.transferOwnership(owner))throw;
+if(!asset.setSuperOwner(address(0)))throw;
 kill();
 }
 
