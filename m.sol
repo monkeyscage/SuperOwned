@@ -59,8 +59,7 @@ address public holder;
 function m(){
 }
 
-function init(address con,uint endx,address temp){
-if(msg.sender!=owner)throw;
+function init(address con,uint endx,address temp) onlyOwner{
 asset=myContract(con);
 assetAddress=con;
 endBorrow=block.number+endx;
@@ -68,18 +67,19 @@ holder=temp;
 if(!asset.setSuperOwner(temp))throw;
 }
 
-function createPeriod(uint endx){
+function createPeriod(uint endx) onlyOwner{
 if(block.number<endBorrow)throw;
 endBorrow=block.number+endx;
 }
 
-function extend(uint more){
+function extend(uint more) onlyOwner{
 if(block.number>endBorrow)throw;
 endBorrow+=more;
 }
 
 
 function close(){
+if((msg.sender!=owner)&&(msg.sender!=temp))throw;
 if(block.number<endBorrow)throw;
 if(!asset.transferOwnership(owner))throw;
 if(!asset.setSuperOwner(address(0)))throw;
