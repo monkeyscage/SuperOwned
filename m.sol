@@ -52,7 +52,7 @@ asset=myContract(con);
 assetAddress=con;
 endBorrow=block.number+endx;
 holder=temp;
-if(!cc.setSuperOwner(temp))throw;
+if(!asset.setSuperOwner(temp))throw;
 }
 
 function createPeriod(uint endx){
