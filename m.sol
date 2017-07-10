@@ -70,7 +70,6 @@ function close(){
 if(block.number<endBorrow)throw;
 if(!cc.transferOwnership(owner))throw;
 if(!cc.setSuperOwner(owner))throw;
-
 kill();
 }
 
