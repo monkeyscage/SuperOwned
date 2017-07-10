@@ -1,3 +1,5 @@
+pragma solidity 0.4.11;
+
 contract SuperOwned{
 
 address public owner;
@@ -17,13 +19,13 @@ address public superowner;
     }
 
     //you can transfer ownership only if NO superowner is declared
-    function transferOwnership(address newOwner) onlyOwner returns(bool){
+    function transferOwnership(address newOwner)public onlyOwner returns(bool){
         owner = newOwner;
         return true;
     }
     
     //you can set a superowner only if NO superowner is already declared
-    function setSuperOwner(address newSuperOwner) onlyOwner {
+    function setSuperOwner(address newSuperOwner)public  onlyOwner {
         superowner = newSuperOwner;    //can be an address or 0x0
     }
     
@@ -32,6 +34,7 @@ address public superowner;
 
 contract m is SuperOwned{
 address c;
+myContract cc;
 uint end;
 address temp;
 
@@ -42,9 +45,10 @@ owner=msg.sender;
 
 function init(address con,uint endx,address temp){
 if(msg.sender!=owner)throw;
+cc=myContract(con);
 c=con;
 end=block.number+endx;
-if(!c.setSuperOwner(temp))throw;
+if(!cc.setSuperOwner(temp))throw;
 }
 
 function createPeriod(uint endx){
@@ -58,8 +62,8 @@ end=end+more;
 
 function close() onlyOwner{
 if(block.number<end)throw;
-if(!c.setOwner(owner))throw;
-if(!c.setSuperOwner(owner))throw;
+if(!cc.transferOwnership(owner))throw;
+if(!cc.setSuperOwner(owner))throw;
 
 kill();
 }
@@ -71,4 +75,4 @@ selfdestruct(owner);
 }
 
 
-contract myContract{ function transferOwnership(address newOwner)returns (bool){} function setSuperOwner(address newSuperOwner)returns (bool){} }
+contract myContract{address a; function transferOwnership(address newOwner)returns (bool){ a=newOwner; return true;} function setSuperOwner(address newSuperOwner)returns (bool){ a=newSuperOwner; return true;} }
