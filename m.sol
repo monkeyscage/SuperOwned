@@ -35,6 +35,20 @@ address public superowner;
 
 }
 
+contract gen is SuperOwned{
+mapping(address=>address)lastContract;
+function gen(){
+}
+function createM(){
+m M=new m();
+if(!M.transferOwnership(msg.sender))throw;
+}
+function kill() onlyOwner{
+selfdestruct(owner);
+}
+function lastModule(address a)constant returns(address b){return lastContract[a];}
+}
+
 contract m is SuperOwned{
 address public assetAddress;
 myContract public asset;
