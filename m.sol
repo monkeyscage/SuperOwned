@@ -61,7 +61,7 @@ endBorrow=block.number+endx;
 }
 
 function extend(uint more){
-if(block.number>=endBorrow)throw;
+if(block.number>endBorrow)throw;
 endBorrow+=more;
 }
 
