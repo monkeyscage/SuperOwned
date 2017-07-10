@@ -65,7 +65,7 @@ kill();
 }
 
 function kill() private{
-selfdestroy();
+selfdestruct(owner);
 }
 
 }
