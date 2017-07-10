@@ -57,7 +57,6 @@ address public holder;
 
 
 function m(){
-owner=msg.sender;
 }
 
 function init(address con,uint endx,address temp){
