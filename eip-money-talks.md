@@ -46,15 +46,15 @@ When the "SuperOwner" is set:
 then only the SuperOwner can overwrite the owner.
 
 ## Rationale
-###Example 1: Renting out a contract.
+### Example 1: Renting out a contract.
 I have my valuable slotmachine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot machine. You pay and become the owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slotmachine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot machine and get the income form players for one week. Let's say that we make things "universally escrowable"]
 
-###Example 2: Creating ETF baskets of slotmachines
+### Example 2: Creating ETF baskets of slotmachines
 Bancor introduced a nice idea: Fill a basket with various ERC20 and tokenize the basket into a unique token.
 This ERC introduces the idea of filling the basket with various slotmachines, later tokenized.
 The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level. 
 
-###Example 3: A rental paradox
+### Example 3: A rental paradox
 We have 2 Smart Assets.
 They have a value because they are Rental Contracts, and they are renting out a Smart Asset.
 Contract A is renting out Contract B.
