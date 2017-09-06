@@ -18,9 +18,12 @@ This standard completes the economy of Ethereum and the vision of a world orbiti
 Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules. The basic concept is to make possible a "temporary ownership" or any other similar application.
 
 ## Motivation
-In the first age Humanity implements Token Assets. Tokens are passive quanities and have no real inner function.
-In the second age Humanity implements Smart Assets (Money Talks). Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
-In the third age (purely theoretical) Smart Assets become active. Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets". 
+###In the first age Humanity implements Token Assets.
+Tokens are passive quanities and have no real inner function.
+###In the second age Humanity implements Smart Assets (Money Talks).
+Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
+###In the third age (purely theoretical) Smart Assets become active.
+Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets". 
 
 
 ## Specification
