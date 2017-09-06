@@ -15,7 +15,7 @@ Note that an EIP number will be assigned by an editor. When opening a pull reque
 
 ## Simple Summary
 The universe of Ethereum orbits around 2 main standards. The first is the well known ERC20, important because not only it recognizes a token as an asset you can own and transfer, but also because it admits [ approveAndCall() ] the existence of an external ecosystem of tools meant to manipulate or be manipulated by those tokens. The second standard is the one introduced by this ERC: MoneyTalks. According to this standard, any smartcontract with "value" is built in a way to admit ownership, ownership transfer, and the existence of an external ecosystem of standard modules meant to manipulate the ownership of that valuable contract. Thanks to this standard approach, any contract with value can be treated like a Standard Smart Asset.
-This standard completes the economy of Ethereum and the vision of a world orbiting around contracts, as an added value to a world only based on ERC20 assets.
+This standard completes the economy of Ethereum and the vision of a world orbiting around contracts (as assets), as an added value to a previous world only based on ERC20 assets.
 
 ## Abstract
 A short (~200 word) description of the technical issue being addressed.
