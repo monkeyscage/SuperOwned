@@ -27,7 +27,7 @@ In the third age (purely theoretical) Smart Assets become active. Quantity based
 Any contract implements the (pretty standard) variable "owner".
 This standard introduces the concept of "SuperOwner": an entity involved in the manipulation of the ownership of an asset.
 
-# Specification 1
+### Specification 1
 Any smart asset has an owner.
 owner
 
