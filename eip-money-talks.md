@@ -5,14 +5,12 @@ Note that an EIP number will be assigned by an editor. When opening a pull reque
 ## Preamble
 
     EIP: <to be assigned>
-    Title: <EIP title>
-    Author: <list of authors' names and optionally, email addresses>
-    Type: <Standard Track | Informational | Meta>
-    Category (*only required for Standard Track): <Core | Networking | Interface | ERC> 
+    Title: Money Talks - Standard for Smart [contract based] Assets
+    Author: TimeTraveller
+    Type: Standard Track
+    Category (*only required for Standard Track): ERC 
     Status: Draft
-    Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-    Requires (*optional): <EIP number(s)>
-    Replaces (*optional): <EIP number(s)>
+    Created: 2017-09-05
 
 
 ## Simple Summary
