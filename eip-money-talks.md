@@ -19,11 +19,13 @@ Smart Contracts can have a value, therefore they need to be defined in a standar
 
 ## Motivation
 
-### In the first age Humanity implements Token Assets.
+    In the first age Humanity implements Token Assets.
 Tokens are passive quanities and have no real inner function.
-### In the second age Humanity implements Smart Assets (Money Talks).
+
+    In the second age Humanity implements Smart Assets (Money Talks).
 Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
-### In the third age (purely theoretical) Smart Assets become active.
+
+    In the third age (purely theoretical) Smart Assets become active.
 Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets", and their active ecosystem.
 
 
