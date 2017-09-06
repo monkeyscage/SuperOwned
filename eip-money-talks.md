@@ -24,10 +24,26 @@ In the third age (purely theoretical) Smart Assets become active. Quantity based
 
 
 ## Specification
-The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (cpp-ethereum, go-ethereum, parity, ethereumj, ethereumjs, ...). 
+Any contract implements the (pretty standard) variable "owner".
+This standard introduces the concept of "SuperOwner": an entity involved in the manipulation of the ownership of an asset.
+
+Specification 1
+Any smart asset has an owner.
+owner
+
+Specification 2
+Any smart Asset must be possibly transferred to a new owner
+
+Specification 3
+Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can transfer the ownership of an asset to a new owner, and back.
+
+Specification 4
+When the "SuperOwner" is set:
+then only the SuperOwner can overwrite the owner.
 
 ## Rationale
-The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.
+Example 1: Renting out a contract.
+I have my valuable slotmachine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot machine. You pay and become the owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slotmachine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot machine and get the income form players for one week]
 
 ## Backwards Compatibility
 All EIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The EIP must explain how the author proposes to deal with these incompatibilities. EIP submissions without a sufficient backwards compatibility treatise may be rejected outright.
