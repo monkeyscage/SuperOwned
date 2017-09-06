@@ -24,7 +24,7 @@ Tokens are passive quanities and have no real inner function.
 ### In the second age Humanity implements Smart Assets (Money Talks).
 Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
 ### In the third age (purely theoretical) Smart Assets become active.
-Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets". 
+Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets", and their active ecosystem.
 
 
 ## Specification
