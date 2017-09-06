@@ -18,7 +18,7 @@ The universe of Ethereum Assets orbits around 2 main standards. The first is the
 This standard completes the economy of Ethereum and the vision of a world orbiting around contracts (as assets), as an added value to a previous world only based on ERC20 assets.
 
 ## Abstract
-Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable and more.
+Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules. The basic concept is to make possible a "temporary ownership" or any other similar application.
 
 ## Motivation
 The motivation is critical for EIPs that want to change the Ethereum protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the EIP solves. EIP submissions without sufficient motivation may be rejected outright.
