@@ -18,11 +18,12 @@ This standard completes the economy of Ethereum and the vision of a world orbiti
 Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules. The basic concept is to make possible a "temporary ownership" or any other similar application.
 
 ## Motivation
-###In the first age Humanity implements Token Assets.
+
+### In the first age Humanity implements Token Assets.
 Tokens are passive quanities and have no real inner function.
-###In the second age Humanity implements Smart Assets (Money Talks).
+### In the second age Humanity implements Smart Assets (Money Talks).
 Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
-###In the third age (purely theoretical) Smart Assets become active.
+### In the third age (purely theoretical) Smart Assets become active.
 Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets". 
 
 
@@ -34,13 +35,13 @@ This standard introduces the concept of "SuperOwner": an entity involved in the 
 Any smart asset has an owner.
 owner
 
-###Specification 2
+### Specification 2
 Any smart Asset must be possibly transferred to a new owner
 
-###Specification 3
+### Specification 3
 Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can transfer the ownership of an asset to a new owner, and back.
 
-###Specification 4
+### Specification 4
 When the "SuperOwner" is set:
 then only the SuperOwner can overwrite the owner.
 
