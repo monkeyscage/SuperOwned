@@ -31,28 +31,32 @@ This standard introduces the concept of "SuperOwner": an entity involved in the 
 Any smart asset has an owner.
 owner
 
-Specification 2
+###Specification 2
 Any smart Asset must be possibly transferred to a new owner
 
-Specification 3
+###Specification 3
 Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can transfer the ownership of an asset to a new owner, and back.
 
-Specification 4
+###Specification 4
 When the "SuperOwner" is set:
 then only the SuperOwner can overwrite the owner.
 
 ## Rationale
-Example 1: Renting out a contract.
-I have my valuable slotmachine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot machine. You pay and become the owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slotmachine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot machine and get the income form players for one week]
+###Example 1: Renting out a contract.
+I have my valuable slotmachine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot machine. You pay and become the owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slotmachine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot machine and get the income form players for one week. Let's say that we make things "universally escrowable"]
 
-## Backwards Compatibility
-All EIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The EIP must explain how the author proposes to deal with these incompatibilities. EIP submissions without a sufficient backwards compatibility treatise may be rejected outright.
+###Example 2: Creating ETF baskets of slotmachines
+Bancor introduced a nice idea: Fill a basket with various ERC20 and tokenize the basket into a unique token.
+This ERC introduces the idea of filling the basket with various slotmachines, later tokenized.
+The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level. 
 
-## Test Cases
-Test cases for an implementation are mandatory for EIPs that are affecting consensus changes. Other EIPs can choose to include links to test cases if applicable.
+###Example 3: A rental paradox
+We have 2 Smart Assets.
+They have a value because they are Rental Contracts, and they are renting out a Smart Asset.
+Contract A is renting out Contract B.
+Contract B is renting out Contract A.
+[these things aren't possible with Token Assets]
 
-## Implementation
-The implementations must be completed before any EIP is given status "Final", but it need not be completed before the EIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.
 
 ## Copyright
-Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+free
