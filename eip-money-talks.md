@@ -1,6 +1,3 @@
-This is the suggested template for new EIPs.
-
-Note that an EIP number will be assigned by an editor. When opening a pull request to submit your EIP, please use an abbreviated title in the filename, `eip-draft_title_abbrev.md`.
 
 ## Preamble
 
@@ -21,7 +18,10 @@ This standard completes the economy of Ethereum and the vision of a world orbiti
 Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules. The basic concept is to make possible a "temporary ownership" or any other similar application.
 
 ## Motivation
-The motivation is critical for EIPs that want to change the Ethereum protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the EIP solves. EIP submissions without sufficient motivation may be rejected outright.
+In the first age Humanity implements Token Assets. Tokens are passive quanities and have no real inner function.
+In the second age Humanity implements Smart Assets (Money Talks). Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
+In the third age (purely theoretical) Smart Assets become active. Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets". 
+
 
 ## Specification
 The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (cpp-ethereum, go-ethereum, parity, ethereumj, ethereumjs, ...). 
