@@ -31,7 +31,7 @@ address public superowner;
     }
     
     //you can set a superowner only if NO superowner is already declared
-    function setSuperOwner(address newSuperOwner) onlySuper {
+    function setSuperOwner(address newSuperOwner) onlySuper  onlySuper returns(bool){
         superowner = newSuperOwner;    //can be an address or 0x0
     }
     
