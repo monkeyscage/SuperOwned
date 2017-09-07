@@ -40,8 +40,8 @@ Quantity based assets may become obsolete, and may be completeley replaced by "q
 
 
 ## Specification
-Any contract implements the (pretty standard) variable "owner".
-This standard introduces the concept of "SuperOwner": an super-entity involved in the manipulation of the ownership of an asset.
+Any contract implements the variable "owner".
+This standard introduces the concept of "SuperOwner": a super-entity involved in the manipulation of the ownership of an asset.
 
 ### Variables and Methods.
 
@@ -59,13 +59,13 @@ Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can
     
 ### transferOwnership
 Any smart Asset must be possibly transferred to a new owner
-(if the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
+(if the "SuperOwner" is set, then only the SuperOwner can overwrite the Owner)
 
     function transferOwnership(address newOwner) onlySuper returns(bool){}
 
 
 ### setSuperOwner
-If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
+If the "SuperOwner" is set, then only the SuperOwner can overwrite the SuperOwner.
 
     function setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
     
