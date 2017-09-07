@@ -162,15 +162,13 @@ Contract B is renting out Contract A.
     }
 
 
-# To be discussed:
+# Notes:
 
     Setting the SuperOwner in "ERC MoneyTalks" is equivalent to approve(address _spender, uint256 _value) in ERC20 standard.
-
-    In ERC20 we have the nice ApproveAndCall() function.
-
-    Are we going to implement something like setSuperOwnerAndCallIt() ? (first you set it, after that you call it to notify)
     
     Please understand the importance of a simmetry between ERC20 and "ERC MoneyTalks" (token-asset VS contract-asset)
+    
+    Are we going to implement something like setSuperOwnerAndCallIt() ? (first you set it, after that you call it to notify)
 
 ## Copyright
 free
