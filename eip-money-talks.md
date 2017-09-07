@@ -44,28 +44,39 @@ Any contract implements the (pretty standard) variable "owner".
 This standard introduces the concept of "SuperOwner": an entity involved in the manipulation of the ownership of an asset.
 
 ### Variables and Methods.
----
 
-### Specification 1
+### owner
 Any smart asset has an owner.
 
     address public owner;
 
-### Specification 2
-Any smart Asset must be possibly transferred to a new owner
-(if the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
 
-    transferOwnership(address newOwner) onlySuper returns(bool){}
-
-### Specification 3
+### superowner
 Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can transfer the ownership of an asset to a new owner, and back.
 
     address public superowner;
+    
+    
+### transferOwnership
+Any smart Asset must be possibly transferred to a new owner
+(if the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
 
-### Specification 4
+    function transferOwnership(address newOwner) onlySuper returns(bool){}
+
+
+### setSuperOwner
 If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
 
-    setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
+    function setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
+    
+-
+### Events
+
+### NewSuperOwner
+
+    event NewSuperOwner(address super);
+    
+---
 
 ## Rationale
 ### Example 1: Renting out a contract.
