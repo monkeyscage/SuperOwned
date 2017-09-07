@@ -40,7 +40,7 @@ Any smart asset has an owner.
 
 ### Specification 2
 Any smart Asset must be possibly transferred to a new owner
-(when the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
+(if the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
 
     transferOwnership(address newOwner) onlySuper returns(bool){}
 
@@ -50,7 +50,7 @@ Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can
     address public superowner;
 
 ### Specification 4
-When the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
+If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
 
     setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
 
