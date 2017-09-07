@@ -69,7 +69,7 @@ If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
 
     function setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
     
--
+
 ### Events
 
 ### NewSuperOwner
