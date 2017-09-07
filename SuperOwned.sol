@@ -33,12 +33,14 @@ address public superowner;
     //you can set a superowner only if NO superowner is already declared
     function setSuperOwner(address newSuperOwner) onlySuper returns(bool){
         superowner = newSuperOwner;    //can be an address or 0x0 (if 0x0 is declared wrong you loose control over the contract)
+        event NewSuperOwner(address newSuperOwner);
         return true;
     }
     
     //a SAFE function to remove the superowner
     function safeReset() onlySuper returns(bool){
         superowner = address(0);
+        event NewSuperOwner(address address(0));
         return true;
     }
     
