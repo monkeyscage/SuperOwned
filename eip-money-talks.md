@@ -43,6 +43,9 @@ Quantity based assets may become obsolete, and may be completeley replaced by "q
 Any contract implements the (pretty standard) variable "owner".
 This standard introduces the concept of "SuperOwner": an entity involved in the manipulation of the ownership of an asset.
 
+### Variables and Methods.
+---
+
 ### Specification 1
 Any smart asset has an owner.
 
