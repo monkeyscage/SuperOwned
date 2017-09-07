@@ -69,9 +69,12 @@ We have 10 slot-machines and 10 friends connected into an exchange ring. Each fr
 ### Example 4: A rental paradox
 We have 2 Smart Assets.
 They have a value because they are Rental Contracts, and they are renting out a Smart Asset.
+
 Contract A is renting out Contract B.
+
 Contract B is renting out Contract A.
-[these things aren't possible with Token Assets]
+
+
 
 
 ## Copyright
