@@ -135,7 +135,7 @@ If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
         function set(uint u) onlyOwner{x=u;}
 
         //now you can attach any kind of standard Rent/Borrow Module to your contract, or use it as an asset in a lending process,
-        //meanwhile the ownership of the cotntract will be in the right hands, according to the needs.
+        //meanwhile the ownership of the contract will be in the right hands, according to the needs.
 
     }
 
