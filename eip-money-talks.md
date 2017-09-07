@@ -57,7 +57,7 @@ This ERC introduces the idea of filling the basket with various slotmachines, la
 The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level, according to the specific needs.
 
 ### Example 3: exchange ring
-We have 10 slot-machines and 10 friends connected into an exchange ring. Everyday the ownerships of the slot machine rotate around the ring. The Superowner is needed to do the job, while keeping ownership rights available at Owners level.
+We have 10 slot-machines and 10 friends connected into an exchange ring. Each friend owns a slot-machine for one day. Everyday the ownerships of the slot machine rotate around the ring, so each friend changes machine daily. The Superowner is needed to do the job, while keeping ownership rights (access to inner functions) available at Owners level.
 
 ### Example 4: A rental paradox
 We have 2 Smart Assets.
