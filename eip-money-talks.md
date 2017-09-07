@@ -86,12 +86,13 @@ I have my valuable slot-machine. I want to rent it out. I find a Standard Rental
 Bancor introduced a nice idea: Fill a basket with various ERC20 and tokenize the basket into a unique token.
 This ERC introduces the idea of filling the basket with various slot-machines, later tokenized.
 The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level, according to the specific needs.
+A basket could be created as an ETF (tokenized), or could simply be itself a Standard Smart Asset (this ERC), and be furtherly manipulated by further super-manipulators.
 
 ### Example 3: exchange ring
 We have 10 slot-machines and 10 friends connected into an exchange ring. Each friend owns a slot-machine for one day. Everyday the ownerships of the slot machine rotate around the ring, so each friend changes machine daily. The Superowner is needed to do the job, while keeping ownership rights (access to inner slot-machine functions) available at Owners level.
 
 ### Example 4: Lending process
-You want to borrow money and you have your valuable slot-machine. At the same time you want to keep control over the slot-machine, and continue earning money from players. A LendingContract will super-own the slot-machine, while you continue beeing the owner. A third party guy lends you money, if after a given time you don't send back the amount+%, then the ownership of the slot-machine will be transferred to the lender. If you pay back, the LenderContract removes itself as SuperOwner from the slot-machine.
+You want to borrow money and you have your valuable slot-machine. At the same time you want to keep control over the slot-machine, and continue earning money from players. A LendingContract will super-own the slot-machine, while you continue beeing the owner (with related income). A third party guy lends you money, if after a given time you don't send back the amount+%, then the ownership of the slot-machine will be transferred to the lender. If you pay back, the LenderContract removes itself as SuperOwner from the slot-machine.
 
 ### Example 5: A rental paradox
 We have 2 Smart Assets.
