@@ -30,10 +30,10 @@ In few words: if you recognize the existence of a SuperOwner, you admit the crea
 ## Motivation
 
     In the first age Humanity implements Token Assets. (ERC20)
-Tokens are passive quanities and have no real inner function.
+Tokens are passive quantities and have no real inner function.
 
     In the second age Humanity implements Smart Assets (ERC MoneyTalks).
-Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
+Contracts are passive, but "qualities based" and can talk and also (being standard) "manipulate each others".
 
     In the third age (purely theoretical) Smart Assets become active.
 Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets", and their ACTIVE ecosystem.
@@ -41,7 +41,7 @@ Quantity based assets may become obsolete, and may be completeley replaced by "q
 
 ## Specification
 Any contract implements the (pretty standard) variable "owner".
-This standard introduces the concept of "SuperOwner": an entity involved in the manipulation of the ownership of an asset.
+This standard introduces the concept of "SuperOwner": an super-entity involved in the manipulation of the ownership of an asset.
 
 ### Variables and Methods.
 
