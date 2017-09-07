@@ -75,7 +75,9 @@ Contract B is renting out Contract A.
 
 # To be discussed:
 Setting the SuperOwner in ERC MoneyTalks is equivalent to Approve() in ERC20 standard.
+
 In ERC20 we have the nice ApproveAndCall() function.
+
 Are we going to implement setSuperOwnerAndCall() ?
 
 ## Copyright
