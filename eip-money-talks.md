@@ -78,6 +78,28 @@ If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
     
 ---
 
+## Rationale
+### Example 1: Renting out a contract.
+I have my valuable slot-machine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot-machine. You pay and become the Owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slot-machine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot-machine and get the income form players for one week. Let's say that we make things "universally escrowable"]
+
+### Example 2: Creating ETF baskets of slotmachines
+Bancor introduced a nice idea: Fill a basket with various ERC20 and tokenize the basket into a unique token.
+This ERC introduces the idea of filling the basket with various slot-machines, later tokenized.
+The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level, according to the specific needs.
+
+### Example 3: exchange ring
+We have 10 slot-machines and 10 friends connected into an exchange ring. Each friend owns a slot-machine for one day. Everyday the ownerships of the slot machine rotate around the ring, so each friend changes machine daily. The Superowner is needed to do the job, while keeping ownership rights (access to inner slot-machine functions) available at Owners level.
+
+### Example 4: Lending process
+You want to borrow money and you have your valuable slot-machine. At the same time you want to keep control over the slot-machine, and continue earning money from players. A LendingContract will super-own the slot-machine, while you continue beeing the owner. A third party guy lends you money, if after a given time you don't send back the amount+%, then the ownership of the slot-machine will be transferred to the lender. If you pay back, the LenderContract removes itself as SuperOwner from the slot-machine.
+
+### Example 5: A rental paradox
+We have 2 Smart Assets.
+They have a value because they are Rental Contracts, and they are renting out a Smart Asset.
+Contract A is renting out Contract B.
+Contract B is renting out Contract A.
+
+
 ## Implementation
 
 
@@ -138,28 +160,6 @@ If the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
         //meanwhile the ownership of the contract will be in the right hands, according to the needs.
 
     }
-
-
-## Rationale
-### Example 1: Renting out a contract.
-I have my valuable slot-machine. I want to rent it out. I find a Standard Rental module, and I register it as SuperOwner of my slot-machine. You pay and become the Owner. You can't transfer the ownership, only the SuperOwner can do it. During one week you can trigger any of the function of the slot-machine (you are hte owner). After one week the Rental Module brings back the ownership to me. Removes itself as SuperOwner (it only can do it!) and selfdestroys. [without a superowner the ownership would never come back, and the owner can change the fees of the slot-machine and get the income form players for one week. Let's say that we make things "universally escrowable"]
-
-### Example 2: Creating ETF baskets of slotmachines
-Bancor introduced a nice idea: Fill a basket with various ERC20 and tokenize the basket into a unique token.
-This ERC introduces the idea of filling the basket with various slot-machines, later tokenized.
-The tokenization may be temporary. Ideally you can tokenize any smart contract, if you define it in a standard way, so that any developer can build a standard tokenizer, ready for any Smart Asset, and at the same time the OWNERSHIP is managed at a different level, according to the specific needs.
-
-### Example 3: exchange ring
-We have 10 slot-machines and 10 friends connected into an exchange ring. Each friend owns a slot-machine for one day. Everyday the ownerships of the slot machine rotate around the ring, so each friend changes machine daily. The Superowner is needed to do the job, while keeping ownership rights (access to inner slot-machine functions) available at Owners level.
-
-### Example 4: Lending process
-You want to borrow money and you have your valuable slot-machine. At the same time you want to keep control over the slot-machine, and continue earning money from players. A LendingContract will super-own the slot-machine, while you continue beeing the owner. A third party guy lends you money, if after a given time you don't send back the amount+%, then the ownership of the slot-machine will be transferred to the lender. If you pay back, the LenderContract removes itself as SuperOwner from the slot-machine.
-
-### Example 5: A rental paradox
-We have 2 Smart Assets.
-They have a value because they are Rental Contracts, and they are renting out a Smart Asset.
-Contract A is renting out Contract B.
-Contract B is renting out Contract A.
 
 
 # To be discussed:
