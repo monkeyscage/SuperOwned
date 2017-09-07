@@ -19,7 +19,7 @@ The second standard is the one introduced by this ERC: MoneyTalks. According to 
 This standard completes the economy of Ethereum and the vision of a world orbiting around contracts (in the form of assets), as an complementary logic to a previous world only based on ERC20 Assets.
 
 ## Abstract
-Smart Contracts can have a value (example: a slot-machine with many players), therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules.
+Smart Contracts can have a value (example: a slot-machine with many players), therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party standard modules/contracts.
 
 The first concept is to make possible a "temporary ownership" or any other similar application.
 The second concept is to split the rights of the Owner from the rights of a possible external "escrow system" (SuperOwner), keeping them at two different levels.
