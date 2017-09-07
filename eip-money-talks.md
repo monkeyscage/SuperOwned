@@ -2,7 +2,7 @@
 ## Preamble
 
     EIP: <to be assigned>
-    Title: Money Talks - Standard for Smart [contract based] Assets
+    Title: MoneyTalks - Standard for Smart [contract based] Assets
     Author: TimeTraveller
     Type: Standard Track
     Category: ERC 
