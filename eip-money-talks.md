@@ -11,7 +11,11 @@
 
 
 ## Simple Summary
-The universe of Ethereum Assets orbits around 2 main standards. The first is the well known ERC20, important because not only it recognizes a token as an asset you can own and transfer, but also because it admits [ approveAndCall() ] the existence of an external ecosystem of tools meant to manipulate or be manipulated by those tokens. The second standard is the one introduced by this ERC: MoneyTalks. According to this standard, any smartcontract with "value" is built in a way to admit ownership, ownership transfer, and the existence of an external ecosystem of Standard Modules meant to MANUIPULATE THE OWNERSHIP of that valuable contract. Thanks to this standard approach, any contract with value can be treated like a Standard Smart Asset.
+The universe of Ethereum Assets orbits around 2 main standards.
+
+The first is the well known ERC20, important because not only it recognizes a token as an asset you can own and transfer, but also because it admits [ approveAndCall() ] the existence of an external ecosystem of tools meant to manipulate or be manipulated by those tokens.
+
+The second standard is the one introduced by this ERC: MoneyTalks. According to this standard, any smartcontract with "value" is built in a way to admit ownership, ownership transfer, and the existence of an external ecosystem of Standard Modules meant to MANUIPULATE THE OWNERSHIP of that valuable contract. Thanks to this standard approach, any contract with value can be treated like a Standard Smart Asset.
 This standard completes the economy of Ethereum and the vision of a world orbiting around contracts (as assets), as an added value to a previous world only based on ERC20 assets.
 
 ## Abstract
@@ -19,14 +23,14 @@ Smart Contracts can have a value, therefore they need to be defined in a standar
 
 ## Motivation
 
-    In the first age Humanity implements Token Assets.
+    In the first age Humanity implements Token Assets. (ERC20)
 Tokens are passive quanities and have no real inner function.
 
-    In the second age Humanity implements Smart Assets (Money Talks).
+    In the second age Humanity implements Smart Assets (ERC MoneyTalks).
 Contracts are passive but "qualities based" and can talk and also (being standard)  "manipulate each others".
 
     In the third age (purely theoretical) Smart Assets become active.
-Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets", and their active ecosystem.
+Quantity based assets may become obsolete, and may be completeley replaced by "qualities based assets", and their ACTIVE ecosystem.
 
 
 ## Specification
