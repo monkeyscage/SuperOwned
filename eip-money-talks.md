@@ -11,7 +11,7 @@
 
 
 ## Simple Summary
-The universe of Ethereum Assets orbits around 2 main standards.
+The universe of **Ethereum Assets** orbits around 2 main standards.
 
 The first is the well known ERC20, important because not only it recognizes a **token as an asset** you can own and transfer, but also because it admits [ approve(address _spender, uint256 _value) ] the existence of an external ecosystem of tools meant to manipulate or be manipulated by those tokens.
 
@@ -19,12 +19,12 @@ The second standard is the one introduced by this ERC: MoneyTalks. According to 
 This standard completes the economy of Ethereum and the vision of a world orbiting around contracts (as assets), as an added value to a previous world only based on ERC20 assets.
 
 ## Abstract
-Smart Contracts can have a value, therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules.
+Smart Contracts can have a value (example: a slot-machine with many players), therefore they need to be defined in a standard way, so that any external Standard Module can manipulate them in term of ownership, making possible to build a whole economy based on Smart Assets. Smart Assets will be easily Rentable/Lendable/Autctionable by means of third party modules.
 
 The first concept is to make possible a "temporary ownership" or any other similar application.
 The second concept is to split the rights of the Owner from the rights of a possible external "escrow system" (SuperOwner), keeping them at two different levels.
 
-In few words: if you recognize the existence of a SuperOwner, you admit the creation of third party standard modules for the manipulation of that specific Standard Smart Asset.
+In few words: if you recognize the existence of a SuperOwner, you admit the creation of third party standard modules for the manipulation of that specific **Standard Smart Asset**.
 
 
 ## Motivation
