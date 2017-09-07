@@ -24,7 +24,7 @@ Smart Contracts can have a value, therefore they need to be defined in a standar
 The first concept is to make possible a "temporary ownership" or any other similar application.
 The second concept is to split the rights of the Owner from the rights of a possible external "escrow system" (SuperOwner), keeping them at two different levels.
 
-In few words: if you recognize the existence of a SuperOwner, you admit the creation of third party standard modules for the manipulation of that specific Smart Asset.
+In few words: if you recognize the existence of a SuperOwner, you admit the creation of third party standard modules for the manipulation of that specific Standard Smart Asset.
 
 
 ## Motivation
