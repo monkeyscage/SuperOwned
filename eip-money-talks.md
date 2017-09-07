@@ -35,17 +35,24 @@ This standard introduces the concept of "SuperOwner": an entity involved in the 
 
 ### Specification 1
 Any smart asset has an owner.
-owner
+
+    address public owner;
 
 ### Specification 2
 Any smart Asset must be possibly transferred to a new owner
+(when the "SuperOwner" is set only the SuperOwner can overwrite the Owner)
+
+    transferOwnership(address newOwner) onlySuper returns(bool){}
 
 ### Specification 3
 Any Smart Asset must allow to be manipulated by a SuperOwner, the SuperOwner can transfer the ownership of an asset to a new owner, and back.
 
+    address public superowner;
+
 ### Specification 4
-When the "SuperOwner" is set:
-then only the SuperOwner can overwrite the owner.
+When the "SuperOwner" is set only the SuperOwner can overwrite the SuperOwner.
+
+    setSuperOwner(address newSuperOwner) onlySuper returns(bool){}
 
 ## Rationale
 ### Example 1: Renting out a contract.
