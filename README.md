@@ -1,3 +1,5 @@
+this was a test, please refer to : https://github.com/monkeyscage/MONEY-TALKS-Standard-Smart-Contract-Asset
+
 
 ## Preamble
 
