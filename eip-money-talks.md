@@ -7,7 +7,7 @@
     Type: Standard Track
     Category: ERC 
     Status: Draft
-    Created: 2017-09-05
+    Created: 2017-09-05 
 
 
 ## Simple Summary
