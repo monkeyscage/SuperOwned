@@ -3,8 +3,8 @@
 
     EIP: <to be assigned>
     Title: MoneyTalks - Standard for Smart [contract based] Assets
-    Author: TimeTraveller
-    Type: Standard Track
+    Author: maxxflyer
+    Type: Standard Track
     Category: ERC 
     Status: Draft
     Created: 2017-09-05
